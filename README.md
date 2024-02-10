@@ -9,7 +9,7 @@ Welcome to the Startup Valuation App! This web application helps you determine y
 - **Interactive Interface:** User-friendly interface with sliders and input fields for easy data input.
 - **Valuation Results:** View valuation results in a collapsible box, providing a clear overview of the calculated valuations.
 
-![Watch QT Screenshare](M.mp4)
+[Watch ScreenShare](M.mp4)
 
 ## How to Use
 
