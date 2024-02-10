@@ -56,7 +56,7 @@ def dcf_valuation(revenues, discount_rate=0.1, terminal_growth_rate=0.05):
     return dcf_value
 
 st.title("🎓 Startup Valuation App")
-st.markdown("This web application serves the purpose of determining your startup's valuation")
+st.markdown("This web application serves the purpose of determining your startup's valuation.")
 st.header("Valuation Methods")
 st.write("""
 1. **P/E Ratio Valuation:** This method calculates the valuation based on the P/E ratio for the selected category.
@@ -77,6 +77,8 @@ st.sidebar.info("""
 This web application serves the purpose of determining your startup's valuation using various methods.
 """)
 
+st.sidebar.image("cover-photo.jpeg", use_column_width=True)
+
 revenues = []
 for i in range(years_existed):
     revenue = st.number_input(f"Annual Revenue for Year {i+1}")
@@ -92,7 +94,5 @@ if st.button("Calculate Valuation"):
     ceq_value = ceq_valuation(revenues)
     st.write("**RADR Valuation:**", radr_value)
     st.write("**CEQ Valuation:**", ceq_value)
-    st.subheader("Valuation Results :moneybag:")
-
 
 st.info("Remember, this app is for informational purposes only and shouldn't be used for making investment decisions.")
